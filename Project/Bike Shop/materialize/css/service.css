@@ -1,0 +1,43 @@
+a:hover{
+  color: orange;
+}
+
+.repair{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+h4{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+hr.gradient {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 0%,
+      orange 11%,
+      yellow 50%,
+      orange 89%,
+      rgb(0, 0, 0) 100%
+    );
+  }
+
+.address{
+      text-align: center;
+  }
+
+a{
+    color: rgb(112, 112, 112);
+}

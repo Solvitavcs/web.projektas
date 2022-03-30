@@ -1,0 +1,42 @@
+a:hover{
+    color: orange;
+}
+.section{
+    text-align: center;  
+}
+
+.row-card{
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.card{
+    background-color: black;
+    color: white;
+}
+
+hr.gradient {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 0%,
+      orange 11%,
+      yellow 50%,
+      orange 89%,
+      rgb(0, 0, 0) 100%
+    );
+}
+
+.address{
+    text-align: center;
+}
+
+a{
+    color: rgb(112, 112, 112);
+}
+
