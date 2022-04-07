@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="css/bikes.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+  <!-- navbar start -->
+  <nav class="black">
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"><img src="Images/main/logo1.png"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="service.html">SERVICE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="shop.html">SHOP</a></li>
+    <li><a href="service.html">SERVICE</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+  </ul>
+  <!-- navbar end -->
+
+  <main>
+    <div class="right"><a class="btn-flat" href="shop.html"><i class="material-icons right">reply</i>Back</a> </div>
+    <h1 class="center">Bikes</h1>
+    <hr class="solid">
+
+    <div class="row" id="items"></div>
+
+    <div class="right"><a class="btn-flat" href="shop.html"><i class="material-icons right">reply</i>Back</a> </div>
+  </main>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/shoppingCart.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(elems);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      displayShopingCartList();
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/shop.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="black">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"><img src="Images/main/logo1.png"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="service.html">SERVICE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <!-- navbar end -->
+    <!--Cards start-->
+    <main class="conteiner">
+        <h1 class="center">SHOP ONLINE</h1>
+        <div class="row" id="shopMenu"></div>
+    </main>
+    <!-- Cards end -->
+    <!-- Bottom start -->
+    <hr class="gradient">
+    <div class="address">
+        <h6>Contact Us:</h6>
+        <address>
+            <p>Address: <a href="contact.html">Tomo g. 24 , Klaipėda</a></p>
+            <p>Email: <a href="mailto:bike.shop@example.com">bike.shop@example.com</a></p>
+            <p>Phone: <a href="tel:+37061234567">+37061234567</a></p>
+        </address>
+    </div>
+    <!-- Bottom end -->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/shopMenu.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            displayShopLists();
+        });
+    </script>
+</body>
+
+</html>
